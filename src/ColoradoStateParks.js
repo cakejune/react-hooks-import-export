@@ -1,8 +1,27 @@
 import React from "react";
 import howManyParks from "./parks/howManyParks";
+import MesaVerde from "./parks/MesaVerde";
+import {trees, wildlife} from "./parks/RockyMountain";
 
 function ColoradoStateParks() {
-  howManyParks(); // => "42 parks!"
+  return(
+    <div>
+      <MesaVerde />
+    </div>
+  );
 
-  return <h1>Colorado State Parks!</h1>;
+}
+console.log(trees);
+// => Aspen and Pine
+
+wildlife();
+//Elk, ....
+
+export default ColoradoStateParks;
+export function wildlife() {
+  console.log("Elk, Bighorn Sheep, Moose");
+}
+
+function elevation() {
+  console.log("9583 ft");
 }
